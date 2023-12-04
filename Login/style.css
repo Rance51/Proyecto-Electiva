@@ -1,0 +1,208 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #001B87, #0058B3,#00A6D7 );
+
+  height: 100vh;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.form-container {
+  background-color: #0058B3;
+  box-shadow: 0 0 5px rgb(6, 61, 163);
+  border: 1px solid #001B87;
+  width: 80%;
+  border-radius: 10px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.form-container .login-container {
+  width: 500px;
+  margin: 0 auto;
+  
+}
+.form-container .login-container > h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container span {
+  color: #000000;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.form-container .login-container label {
+  display: block;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.form-container .login-container input.input {
+  display: block;
+  box-sizing: border-box;
+  background-color: #00A6D7;
+  padding: 10px;
+  border: solid 1px #001B87;
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-container .login-container input.input:focus {
+  outline: solid 1px rgb(0, 153, 255);
+}
+.form-container .login-container .providers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+.form-container .login-container button.btn,
+.form-container .login-container input.btn {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: bolder;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-container .login-container input.btn.btn-login {
+  background-color: #00A6D7;
+  color: #fff;
+  border: red 1px solid;
+  border: 15px;
+}
+
+.form-container .login-container input.btn.btn-login:hover {
+  background-color: #001B87;
+  transition: 200ms;
+  color: #fff;
+}
+
+
+.form-container .login-container button.btn.google-provider {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: solid 1px #ccc;
+}
+
+.form-container .login-container button.btn.facebook-provider {
+  background-color: rgb(10, 82, 216);
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
+.form-container .login-container button.btn.twitter-provider {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
+
+.form-container .login-container button.btn.google-provider:hover {
+  background-color: rgb(212, 212, 212);
+  color: black;
+  transition: 200ms;
+}
+
+.form-container .login-container button.btn.facebook-provider:hover {
+  background-color: rgb(6, 61, 163);
+  color: white;
+  transition: 200ms;
+}
+.form-container .login-container button.btn.twitter-provider:hover {
+  background-color: #fff;
+  color: #000000;
+  transition: 200ms;
+}
+
+.form-container .login-container .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.link a:hover{
+  color: #00A6D7;
+  transition: 200ms;
+  transition-duration: 1s;
+}
+
+.form-container .welcome-screen-container {
+  background-color: black;
+  border-radius: 1rem;
+  height: 100%;
+  width: 50%;
+}
+
+@media screen and (max-width: 1357px) {
+  .form-container {
+    width: 95%;
+  }
+  .form-container .login-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-container .welcome-screen-container {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .form-container .login-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-container .welcome-screen-container {
+    width: 0%;
+  }
+}
